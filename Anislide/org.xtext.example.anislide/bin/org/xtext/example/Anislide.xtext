@@ -1,0 +1,9 @@
+grammar org.xtext.example.Anislide with org.eclipse.xtext.common.Terminals
+
+generate anislide "http://www.xtext.org/example/Anislide"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
